@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f3f2e9"><title>鹈鹕的海岸假日 · Pelican Coast</title><link rel="icon" href="data:,"><link rel="stylesheet" href="style.css"><script type="importmap">{"imports":{"three":"./vendor/three.module.js","three/addons/controls/OrbitControls.js":"./vendor/OrbitControls.js"}}</script></head>
+<body>
+<main>
+  <div id="scene" aria-label="可旋转的三维海岸场景：一只戴头盔的鹈鹕骑青绿色自行车" tabindex="0"></div>
+  <header><a class="brand" href="./" aria-label="鹈鹕海岸首页"><svg viewBox="0 0 38 38" aria-hidden="true"><path d="M6 29c2-8 5-12 12-12 1-5 2-10 7-10 4 0 5 4 4 6l7 3-10 2c0 10-8 15-20 11Z" fill="currentColor"/><circle cx="26" cy="11" r="1" fill="#f3f2e9"/></svg><span>PELICAN<span class="brand-sub">COAST CLUB</span></span></a><span class="edition">小小世界，自由骑行<span>AN INTERACTIVE LITTLE ESCAPE</span></span><button id="sound" class="icon-btn" aria-label="开启海浪环境音" aria-pressed="false" title="海浪环境音">♫</button></header>
+  <section class="intro"><div class="eyebrow"><span></span> 今天，向海边出发</div><h1>生活慢一点，<br>海风刚刚好<span>。</span></h1><p>和鹈鹕一起，把日常骑成假日。</p><div class="scene-label"><span class="line"></span> 海岸骑行 · 001</div></section>
+  <aside class="weather"><span id="sun-icon">☀</span><div><b id="light-name">晴日海岸</b><span id="light-caption">风很轻，路还长</span></div></aside>
+  <div class="scene-hint" id="hint"><span>↔</span> 拖动环顾 · 滚轮缩放</div>
+  <div class="right-tools" aria-label="场景工具"><button id="bell" class="icon-btn" aria-label="按车铃" title="按车铃 B"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 16h14l-2-3V9a5 5 0 0 0-10 0v4Zm5 3h4M11 3h2"/></svg></button><button id="capture" class="icon-btn" aria-label="保存场景图片" title="保存场景图片"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7h4l2-3h6l2 3h4v13H3Z"/><circle cx="12" cy="13" r="4"/></svg></button><button id="reset" class="icon-btn" aria-label="重置视角" title="重置视角 R">↺</button></div>
+  <section class="controls" aria-label="骑行控制"><button id="play" class="play" aria-label="暂停骑行" aria-pressed="false"><span id="play-icon">Ⅱ</span><span id="play-text">歇一会儿</span></button><div class="control-sep"></div><div class="speed-control"><div><label for="speed">骑行节奏</label><output id="speed-value" for="speed">悠游 · 12 km/h</output></div><input id="speed" type="range" min="3" max="24" value="12" step="1" aria-label="骑行速度"></div><div class="control-sep"></div><div class="views" aria-label="视角"><button data-view="coast" class="selected" aria-pressed="true">海岸</button><button data-view="side" aria-pressed="false">侧影</button><button data-view="top" aria-pressed="false">鸟瞰</button></div><div class="control-sep light-sep"></div><button id="day" class="day" aria-label="切换至日落">☀ <span>日落模式</span></button></section>
+  <footer><span>A LITTLE RIDE. A LOT OF JOY.</span><span class="shortcut">空格 暂停 / 继续 <i>·</i> B 车铃</span><span>慢慢骑，世界很美 <span class="tiny-arrow">↗</span></span></footer>
+  <div id="loading"><div class="loader-mark">◒</div><p>正在把海风装进口袋…</p><small>构建你的 3D 小世界</small></div>
+  <div id="error" hidden><h2>3D 场景暂时无法启动</h2><p>请在支持 WebGL 2 的 Chrome 或 Edge 中打开，并开启浏览器硬件加速。</p><button onclick="location.reload()">重新尝试</button><small id="error-detail"></small></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+</main>
+<script type="module" src="app.js"></script>
+</body></html>

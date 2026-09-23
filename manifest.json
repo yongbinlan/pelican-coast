@@ -1,0 +1,14 @@
+{
+  "name": "pelican-coast",
+  "version": "1.0.0",
+  "files": {
+    "index.html": "621728910cc6f076cae0228479d0cd36e5229ac3a33474efb080cc8d4d143642",
+    "app.js": "2fe9f49b663b7d30e44d9919f8420a3c4c9e754161cd905100409ad36115aeb7",
+    "style.css": "40ed044d38b9f9f16cd53cdf854c05255f682651556d12129de14b8bbfadae8f",
+    "Start.ps1": "ffa968830b3f8421226d56416dfe230d07e1d1d8c2313b74e7cee253c2395896",
+    "vendor/three.module.js": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+    "vendor/OrbitControls.js": "80efaadea4f8a636a65fb0bd08bfef62f3d93a0bb94e2e7500f23176c5c07f4e",
+    "vendor/LICENSE-three.txt": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+  },
+  "runtime_external_requests": []
+}
