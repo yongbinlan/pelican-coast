@@ -2,6 +2,8 @@
 
 一个可交互的 3D 海岸微缩世界：戴头盔的鹈鹕骑着自行车，伴随灯塔、帆船和海风。
 
+**[在线体验 →](https://yongbinlan.github.io/pelican-coast/)**
+
 ![场景预览](docs/preview.png)
 
 ## 体验
